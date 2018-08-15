@@ -23,7 +23,7 @@ import datetime
 #nltk.download_shell() # DOWNLOAD on first run required.
 from nltk.sentiment.vader import SentimentIntensityAnalyzer as SIA # http://t-redactyl.io/blog/2017/04/using-vader-to-handle-sentiment-analysis-with-social-media-text.html
 
-reddit = praw.Reddit(client_id='xSpcRJW6Yh7p9g',client_secret='G7HQJ7J9oKh3lUkF96-m1VJwMMs', user_agent='subSentiment')
+reddit = praw.Reddit(client_id='...',client_secret='...', user_agent='...')
 
 # https://www.youtube.com/watch?v=K6ixFSxZAX0
 # https://plot.ly/products/dash/
