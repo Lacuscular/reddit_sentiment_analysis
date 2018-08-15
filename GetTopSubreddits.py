@@ -10,7 +10,7 @@ from textblob import TextBlob
 import nltk
 from bs4 import BeautifulSoup
 
-reddit = praw.Reddit(client_id='xSpcRJW6Yh7p9g',client_secret='G7HQJ7J9oKh3lUkF96-m1VJwMMs', user_agent='subSentiment')
+reddit = praw.Reddit(client_id='...',client_secret='...', user_agent='...')
 # https://www.analyticsvidhya.com/blog/2015/10/beginner-guide-web-scraping-beautiful-soup-python/
 # https://stackoverflow.com/questions/2792650/import-error-no-module-name-urllib2
 
