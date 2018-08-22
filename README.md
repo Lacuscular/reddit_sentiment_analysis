@@ -1,6 +1,4 @@
 # reddit_sentiment_analysis
-School Project
-
 This is a school project about "sentiment analysis" on the Top 100 Subreddits of Reddit.com.
 
 Screenshot: https://i.gyazo.com/7d441b5e68d8ab88047e9ea1b3822bd6.png
