@@ -1,5 +1,6 @@
 # reddit_sentiment_analysis
 School Project
+
 This is a school project about sentiment analysis on the Top 100 Subreddits of Reddit.com.
 
 This repo contains a small sample CSV (as an export for excel sheets & visualization) and a sample database for demo purposes.
