@@ -65,8 +65,6 @@ for subreddit in top100sr:
                                                             sentiment_vader real
                                                         ); """
         c.execute(sql_create_projects_table.format(subreddit + "_sr"))
-        # c.execute("PRAGMA journal_mode=wal")
-        # c.execute("PRAGMA wal_checkpoint=TRUNCATE")
 
         conn.commit()
 
