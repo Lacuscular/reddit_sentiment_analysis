@@ -25,9 +25,9 @@ from nltk.sentiment.vader import SentimentIntensityAnalyzer as SIA # http://t-re
 
 reddit = praw.Reddit(client_id='...',client_secret='...', user_agent='...')
 
-# https://www.youtube.com/watch?v=K6ixFSxZAX0
 # https://plot.ly/products/dash/
 # https://dash.plot.ly/getting-started
+# https://www.youtube.com/watch?v=K6ixFSxZAX0 (tutorial series)
 
 
 top100sr = []
@@ -132,9 +132,7 @@ html.H2('Reddit Sentiment Analysis',
 
 html.Div(className='container', children=[
     html.H5('Subreddit', style={'clear': 'both', 'margin-bottom': '5px'}),
-    dcc.Dropdown(id='subreddit-dropdown', options=[{'label': sr[1], 'value': sr[0]} for sr in top100sr_desc]),  # update last updated timestamp
-
-    # show progress (from a download perspective, so take subreddit that are already downloaded), + private/public
+    dcc.Dropdown(id='subreddit-dropdown', options=[{'label': sr[1], 'value': sr[0]} for sr in top100sr_desc]),
 
 
 
@@ -167,14 +165,14 @@ html.Div(className='container', children=[
     values=['Positive', 'Negative']
     ),
 
-    html.Div(id='status'), # add status :) (also progress) [========>] x days until today
+    html.Div(id='status'), # add status :)
 
     html.Div(className='row', children=[
         html.Div(dcc.Graph(id='daily-graph', animate=False)),
         html.Div(dcc.Graph(id='pie-chart', animate=False))]),
 
     html.H5('Save Options', style={'clear': 'both', 'margin-bottom': '5px', 'margin-top': '10px'}),
-    html.Button('Export to CSV', id='savebutton'),  # 15 mins = min based, daily = daily lmao
+    html.Button('Export to CSV', id='savebutton'),  # 15 mins = min based, daily = per 24hrs
 
 
 
@@ -329,15 +327,9 @@ def update_pie_chart(subreddit, components):
 
             return {"data": [trace], 'layout': go.Layout(
                 title='Summarized Pie Chart for Subreddit "{}"'.format(subreddit),
-                # font={'color': app_colors['text']},
-                # plot_bgcolor=app_colors['background'],
-                # paper_bgcolor=app_colors['background'],
                 showlegend=True)}
 
 
-
-
-# check every second if is selected
 
 last_time_checked = 0
 @app.callback(
@@ -412,8 +404,8 @@ def update_status(subreddit, components, timemode):
 
                 if df.empty:
                     return
-                # summarize daily: d.h. daytime, sentiment_textblob, sentiment_vader, volume
-                # summarize minutely (limit 1000)
+                
+                
                 df['volume'] = 1
 
 
