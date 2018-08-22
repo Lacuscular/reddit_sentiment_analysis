@@ -40,10 +40,8 @@ print(B) # printing top 100 subreddits
 # apis #
 # textblob (https://media.readthedocs.org/pdf/textblob/dev/textblob.pdf) (https://stevenloria.com/simple-text-classification/)
 # nltk/vader (https://programminghistorian.org/lessons/sentiment-analysis) (https://www.learndatasci.com/tutorials/sentiment-analysis-reddit-headlines-pythons-nltk/)
-# google cloud (https://cloud.google.com/natural-language/docs/sentiment-tutorial) // https://www.youtube.com/watch?v=wEiBVwfhdU0
-# amazon cloud (https://docs.aws.amazon.com/comprehend/latest/dg/get-started-api-sentiment.html)
 
-# if more time: lstm netowrk + live preview
+# if more time: lstm netowrk
 
 #print posts 1 day back
 # https://stackoverflow.com/questions/12463818/using-praw-how-do-you-get-comment-linked-by-a-url
@@ -57,10 +55,7 @@ print(B) # printing top 100 subreddits
 #      for comment in submission.comments:
 #         print(comment.body)
 
-# todo: rate comments and post sentiment by value of upvotes, from min to max each day..
-# todo: topwords with sentiment context sentiment
-
-sb_reddit = "dankmemes"
+sb_reddit = "funny"
 post_urls = GetRedditPosts.GrabData_DaysBack(sb_reddit, 5, 0) # subreddit, days back, modi (0=threads, 1=comments)
 #comment_urls = GetRedditPosts.GrabData_DaysBack(sb_reddit, 0, 1)
 #mods = reddit.subreddit(sb_reddit).moderator()
@@ -177,13 +172,3 @@ for obj in post_urls:
 #        print(str(submission.title) + ' // ' + str(submission.selftext) + ' // ' + str(
 #        submission.url) + ' // ' + str(submission.permalink) + '\n')
 #        print('---------------------------------------------')
-
-
-
-
-# fiver feedback https://www.youtube.com/watch?v=GZmK-3sZ9hc
-################################################# also use for reddit content
-# https://dialogflow.com/pricing/ idk
-# Named Entity Recognition => SPICY
-
-############### tomorrow make csv files with folder subreddit and there for each day make a url list for all posts..
