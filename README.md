@@ -4,7 +4,7 @@ School Project
 This is a school project about "sentiment analysis" on the Top 100 Subreddits of Reddit.com.
 
 Some Infos about this script:
-- The Top 100 Subreddits are scraped from http://redditmetrics.com/top and are stored in a string list.
+- The Top 100 Subreddits (which are public) are scraped from http://redditmetrics.com/top and are stored in a string list.
 - Visualization is live-updating through SQLite & also there is a spawned thread for the Downloader to make things easier.
 - The Download Thread downloads input from PushShift, preprocesses it, calculates the sentiment and inserts it into the Database.
 
