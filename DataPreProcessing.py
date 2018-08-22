@@ -168,5 +168,3 @@ def preprocess_Data(data):
 # fastText -> facebook
 # http://www.nltk.org/howto/sentiment.html
 # spacy
-
-# CHECK FOR BEST SUMMARIZATION's: semantic sentence connectivity, textblob nouns, keyword extraction, prolly get better stuff later?
