@@ -14,7 +14,7 @@ Downloading all data of one subreddit will probably take several days.
 The script is fully working currently although there are small coding bugs, but will probably be fixed in the next days.
 Credits, links and some of my thoughts while coding (prototypes & tests) were distributed in the comments.
 
-In order to use it, a Reddit API Key is required.
+In order to use it, a Reddit API Key is required:
 https://github.com/reddit-archive/reddit/wiki/OAuth2
 
 Screenshot: https://i.gyazo.com/7d441b5e68d8ab88047e9ea1b3822bd6.png
