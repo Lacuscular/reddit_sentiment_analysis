@@ -11,7 +11,7 @@ Some Infos about this script:
 This repo contains a small sample CSV (as an export for excel sheets & visualization) and a sample database for demo purposes.
 Downloading all data of one subreddit will probably take several days.
 
-There are small coding bugs, but will probably be fixed in the next days.
-Credits, links and some of my thoughts while coding were distributed in the comments.
+The script is fully working currently although there are small coding bugs, but will probably be fixed in the next days.
+Credits, links and some of my thoughts while coding (prototypes & tests) were distributed in the comments.
 
 Screenshot: https://i.gyazo.com/7d441b5e68d8ab88047e9ea1b3822bd6.png
