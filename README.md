@@ -11,7 +11,7 @@ Some Infos about this script:
 This repo contains a small sample CSV (as an export for excel sheets & visualization) and a sample database for demo purposes.
 Downloading all data of one bigger subreddit will probably take several hours/days (depending on data size, internet speed and CPU performance)
 
-The script is fully working currently although there are small coding bugs, but will probably be fixed in the next days.
+The script is fully working currently although there are small coding bugs incl. some messy parts, but will probably be fixed in the next days.
 Credits, links and some of my thoughts while coding (prototypes & tests) were distributed in the comments.
 
 In order to use it, a Reddit API Key is required:
